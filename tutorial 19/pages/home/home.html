@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor="let music of allMusic">
+    <img [src]="music.image">
+    <ion-card-content>
+      <ion-card-title>{{music.name}}</ion-card-title>
+      <ion-item>
+      <button ion-button item-left>Share</button>
+      <button ion-button item-right>Play</button>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
