@@ -15,7 +15,7 @@ export class MusicsProvider {
     console.log('Hello MusicsProvider Provider');
   }
   getMusic(){
-  	return this.http.get(API);
+  	return this.http.get<any[]>(API);
   		
 
   		
